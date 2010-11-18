@@ -98,7 +98,7 @@ module Grape
         end
       end
       
-      def encode_txt(object)
+      def encode_txt(body)
         body.respond_to?(:to_txt) ? body.to_txt : body.to_s
       end
     end
